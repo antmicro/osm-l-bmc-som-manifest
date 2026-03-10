@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="openbmc"      fetch="https://github.com/openbmc"/>
+  <remote name="imx"          fetch="https://github.com/nxp-imx"/>
+  <remote name="kraj"         fetch="https://github.com/kraj"/>
+  <remote name="community"    fetch="https://github.com/Freescale"/>
+  <remote name="yoctoproject" fetch="https://git.yoctoproject.org"/>
+  <remote name="antmicro"     fetch="https://github.com/antmicro/"/>
+
+  <project name="openbmc"                        remote="openbmc"   path="."                revision="61f215829fedecaea99419b19147b544dfdac4ff" upstream="walnascar" />
+  <project name="meta-imx"                       remote="imx"       path="meta-imx"         revision="5fe9cc9d449af5482c49d6b57e0c5fbd3809e380" upstream="walnascar-6.12.34-2.1.0"/>
+  <project name="meta-clang"                     remote="kraj"      path="meta-clang"       revision="003cba92e982bdd565a6889f28799f8bba14957e" upstream="walnascar" />
+  <project name="meta-freescale"                 remote="community" path="meta-freescale"   revision="167ff4ddb79299cf5477e94620a9e598659c407b" upstream="walnascar" />
+  <project name="osm-l-bmc-som-meta-imx-openbmc" remote="antmicro"  path="meta-imx-openbmc" revision="main" />
+
+</manifest>
